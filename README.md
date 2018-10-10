@@ -6,7 +6,7 @@ Build & Run the Docker Image
 ----------------------------
 
 1. `docker build -t bchd-web .`
-2. `docker run -d -p 8888:8080 bchd-web`
+2. `docker run -d -p 8888:80 bchd-web`
 
 About bchd
 ----------
