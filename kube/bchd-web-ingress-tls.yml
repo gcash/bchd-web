@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: bchd-web-ingress
+  namespace: default
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+spec:
+  tls:
+  - hosts:
+    - www.bchd.cash
+    - bchd.cash
+    secretName: bchd-web-tls
+  backend:
+    serviceName: bchd-web
+    servicePort: 95
+  rules:
+  - host: bchd.cash
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: bchd-web
+          servicePort: 95
+  - host: www.bchd.cash
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: bchd-web
+          servicePort: 95

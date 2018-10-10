@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  namespace: default
+  labels:
+    service: bchd-web
+  name: bchd-web
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        service: bchd-web
+    spec:
+      containers:
+      - image: zquestz/bchd-web:latest
+        imagePullPolicy: Always
+        name: bchd-web
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+      restartPolicy: Always
