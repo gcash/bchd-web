@@ -31,26 +31,30 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
-  color: #e6f0f0;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:link {
-  color: #e6f0f0;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:active {
   color: #ff9500;
   text-decoration: none;
   font-weight: bold;
 }
 
+a:link {
+  color: #ff9500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:active {
+  color: #e6f0f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 a:hover {
- color: #ff9500;
- text-decoration: none;
- font-weight: bold;
+  color: #e6f0f0;
+  text-decoration: none;
+  font-weight: bold;
 }
