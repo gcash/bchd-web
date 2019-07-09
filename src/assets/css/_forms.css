@@ -1,0 +1,133 @@
+/* Form Controls
+------------------------------------------------------------- */
+.form-input {
+  color: #000;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  -webkit-box-shadow: unset;
+  box-shadow:         unset;
+  border: 1px solid #b3b3b3;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.form-input:focus {
+  border-color: #008fdb;
+  outline: 0;
+  -webkit-box-shadow: unset;
+  box-shadow:         unset;
+}
+
+.form-input input[type="text"],
+.form-input input[type="submit"],
+.form-input input[type="password"],
+.form-input input[type="email"] {
+  height: 30px;
+}
+
+
+/* Placeholder Text
+------------------------------------------------------------- */
+.form-input::-webkit-input-placeholder {
+  color: #777;
+}
+.form-input::-moz-placeholder {
+  color: #777;
+}
+.form-input:-ms-input-placeholder {
+  color: #777;
+}
+.form-input:-moz-placeholder {
+  color: #777;
+}
+
+
+/* Button Overrides
+------------------------------------------------------------- */
+[role="button"] {
+  cursor: pointer;
+}
+.btn {
+  color: #fff;
+  background-color: #db0bc4;
+  font-weight: 700;
+  font-size: 1rem;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50px;
+  border-color: #650f8a;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.btn {
+  color: #db0bc4;
+  background-color: #fff;
+  border-color: #db0bc4;
+  padding: 5px 15px;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #0b74e5;
+  border-color: #094cc8;
+  text-decoration: none;
+}
+.btn:focus,
+.btn:active {
+  text-decoration: none;
+}
+.btn-secondary {
+  color: #333;
+  font-weight: 400;
+  background-color: #dedede;
+}
+.btn-secondary {
+  color: #4d4d4d;
+  background-color: #f2f2f2;
+  border-color: #d4d4d4;
+}
+
+/* Misc
+------------------------------------------------------------- */
+.form-group label,
+.form-inline label {
+  display: none;
+}
+textarea,
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="email"] {
+  -webkit-appearance: none;
+}
+.alert {
+  border-radius: 0 !important;
+}
+.checkbox label {
+  color: #383a3d;
+}
+legend {
+  color: #383a3d;
+  text-align: left;
+  padding-left: 7px;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+fieldset {
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #c1c1c1;
+  border-radius: 8px;
+  padding: 15px 20px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  fieldset {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+}

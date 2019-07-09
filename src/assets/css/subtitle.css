@@ -1,0 +1,33 @@
+/* Subtitle
+--------------------------------------------*/
+.subtitle {
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 500px) {
+  .subtitle {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .subtitle-heading {
+    text-align: center;
+  }
+  .subtitle-text {
+    text-align: center;
+  }
+}
+@media (min-width: 850px) {
+  .subtitle {
+    max-width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .subtitle {
+    max-width: 700px;
+  }
+  .subtitle-text {
+    padding: 0 40px;
+  }
+}

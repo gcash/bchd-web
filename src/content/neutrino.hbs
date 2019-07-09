@@ -1,0 +1,31 @@
+<section class="neutrino">
+  <div class="container">
+
+    <picture class="neutrino-img-wrapper">
+      <source media="(min-width: 1200px)" srcset="{{ img_dir }}neutrino.intro-xlarge.jpg?{{ version }}" />
+      <source media="(min-width: 992px)" srcset="{{ img_dir }}neutrino.intro-large.jpg?{{ version }}" />
+      <source media="(min-width: 550px)" srcset="{{ img_dir }}neutrino.intro-medium.jpg?{{ version }}" />
+      <source srcset="{{ img_dir }}neutrino.intro-small.jpg?{{ version }}" />
+      <img src="{{ img_dir }}neutrino.intro-small.jpg" class="img-responsive neutrino-img" />
+    </picture>
+    <div class="neutrino-text">
+      <h1 class="neutrino-heading">BCHD is ready for Neutrino</h1>
+      <p class="neutrino-subhead">Neutrino's client-side filtering is the future of SPV wallets</p>
+      <p>Client-side filtering means users no longer have to disclose their Bitcoin addresses to a third party to find out if they have received a transaction. BCHD is the only implementation that supports this revolutionary technology.</p>
+      <div class="slide-panel-expand-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <a role="button" class="slide-btn" data-target="neutrino">Learn more about Neutrino</a>
+    </div>
+    <div id="neutrino" class="slide-panel">
+      <h2 class="slide-heading">Rethink light wallets</h2>
+      <p>Most SPV wallets send user info to third-party servers to filter their transactions. This is a massive leak of personal data, as well as an added strain on those nodes.</p>
+      <p>Neutrino pulls data directly from the Bitcoin Cash network and filters transactions right on the client device. This preserves users' privacy and results in a more robust wallet network.</p>
+      {{!--
+      <p>Want to know even more? Check out the first <a href="https://neutrino.cash/" target="_blank">Bitcoin Cash Neutrino wallet</a> where we go into more detail.</p>
+      --}}
+    </div>
+
+  </div>
+</section>

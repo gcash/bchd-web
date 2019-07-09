@@ -1,0 +1,36 @@
+<section class="download">
+  <a href="https://github.com/gcash/bchd/releases/latest" target="_blank" role="button" class="slide-btn downloadBtn-link" data-target="download-{{ panel }}">
+    <img src="{{ svg_dir }}download.svg?{{ version }}" class="downloadBtn-icon">
+    <div class="downloadBtn-text">
+      <p class="downloadBtn-now">Download Now</p>
+      <p class="downloadBtn-os">Latest Release {{ release.version }}</p>
+    </div>
+  </a>
+  <div id="download-{{ panel }}" class="slide-panel downloadPanel-slide">
+    <h2 class="slide-heading">Latest Release {{ release.version }}</h2>
+    <div class="downloadPanel-options">
+
+      {{!-- Iterate through each OS release listed in data.yml --}}
+      {{# each release.os}}
+      <div class="downloadPanel-option">
+        <img src="{{ ../svg_dir }}downloads.{{ this.slug }}.svg?{{ ../version }}" class="downloadPanel-osIcon">
+        <p class="downloadPanel-osName">{{ this.name }}</p>
+        <ul class="downloadPanel-isaList">
+          {{!-- Iterate through each release listed in data.yml --}}
+          {{# each this.isa }}
+          <li>
+            <a href="https://github.com/gcash/bchd/releases/download/{{ ../../release.version }}/{{ this.filename }}" target="_blank">{{ this.name }}</a>
+          </li>
+          {{/ each }}
+        </ul>
+      </div>
+      {{/ each}}
+
+    </div>
+    <p class="downloadPanel-githubLink">
+      <a href="https://github.com/gcash/bchd/releases" target="_blank" class="downloadPanel-githubLink">
+        View all releases on GitHub<img src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink">
+      </a>
+    </p>
+  </div>
+</section>

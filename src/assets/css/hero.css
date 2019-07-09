@@ -1,0 +1,128 @@
+/* Hero
+--------------------------------------------*/
+.hero {
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+}
+.hero-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 160px;
+}
+.hero-heading {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  width: 75%;
+  box-shadow: 6px 3px 10px 0px rgba(13, 59, 89, 0.5);
+  margin-bottom: 0;
+  padding: 20px;
+}
+.hero-heading:before,
+.hero-heading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 75%;
+  background-color: #24e6aa;
+  opacity: 1;
+}
+.hero-heading:before {
+  top: 10px;
+  right: -10px;
+}
+.hero-heading:after {
+  bottom: 10px;
+  left: -20px;
+}
+@media (min-width: 440px) {
+  .hero-logo {
+    top: 30px;
+    width: 180px;
+  }
+  .hero-heading {
+    bottom: 45px;
+    right: 20px;
+  }
+}
+@media (min-width: 500px) {
+  .hero-heading {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .hero-logo {
+    top: 40px;
+    right: 50px;
+    width: 200px;
+  }
+  .hero-heading {
+    width: 40%;
+    bottom: 20px;
+    right: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .hero-heading {
+    bottom: 210px;
+    right: 30px;
+    padding: 35px 20px;
+  }
+  .hero-heading:before {
+    top: 17px;
+    right: -20px;
+  }
+  .hero-heading:after {
+    bottom: 17px;
+    left: -20px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-logo {
+    top: 20px;
+    left: 20px;
+    right: unset;
+    width: 180px;
+  }
+  .hero-heading {
+    width: 50%;
+    bottom: 20px;
+    right: 30px;
+    padding: 40px 30px;
+  }
+}
+@media (min-width: 992px) {
+  .hero-logo {
+    top: 30px;
+    left: 30px;
+    width: 220px;
+  }
+  .hero-heading {
+    bottom: 60px;
+    right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-heading {
+    width: 420px;
+  }
+}
+@media (min-width: 1350px) {
+  .hero-heading {
+    font-size: 2.4rem;
+    width: 600px;
+    bottom: 10%;
+    right: 5%;
+  }
+}
+@media (min-width: 1350px) {
+  .hero-heading {
+    right: 10%;
+  }
+}

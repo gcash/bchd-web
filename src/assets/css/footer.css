@@ -1,0 +1,25 @@
+/* Footer
+------------------------------------------------------------- */
+.footer {
+  background-color: #12213b;
+  padding: 1rem 25px;
+  text-align: center;
+}
+.footer-text {
+  color: #7d808c;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.footer-text a {
+  color: #a4a9ad;
+}
+.footer-text a:active,
+.footer-text a:hover,
+.footer-text a:focus {
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .footer-text {
+    display: inline-block;
+  }
+}

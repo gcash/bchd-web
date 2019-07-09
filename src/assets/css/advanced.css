@@ -1,0 +1,132 @@
+/* Advanced
+--------------------------------------------*/
+.advanced {
+  background: #f0f2f4;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.advanced-heading {
+  color: #464853;
+  margin-bottom: 40px;
+}
+@media (min-width: 550px) {
+  .advanced-heading {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .advanced-heading {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) {
+  .advanced {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advanced-heading {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .advanced {
+    padding-top: 75px;
+  }
+  .advanced-heading {
+    margin-bottom: 75px;
+  }
+}
+
+
+/* Advanced Features
+--------------------------------------------*/
+.advancedFeature {
+  margin-bottom: 40px;
+}
+.advancedFeature:last-of-type {
+  margin-bottom: 0;
+}
+.advancedFeature-img {
+  width: 70%;
+  max-width: 230px;
+  margin-bottom: 10px;
+}
+.advancedFeature-text {
+  padding-bottom: 25px;
+}
+.advancedFeature-text > h2 {
+  color: #464853;
+}
+.advancedFeature-text .slide-btn {
+  color: #464853;
+  background-color: #d9d9d9;
+  border-color: #b5b6c0;
+}
+.advancedFeature-text .slide-btn.open {
+  color: #444;
+}
+.advancedFeature-text .slide-btn:hover {
+  color: #214075;
+  background-color: #24e6aa;
+  border-color: #24e6aa;
+}
+#fastsync, #indexes, #wallet {
+  background-color: #ffffff;
+  background-image: unset;
+  text-align: left;
+  border: none;
+  border-radius: 15px;
+}
+#fastsync p:last-of-type,
+#indexes p:last-of-type,
+#wallet p:last-of-type {
+  margin-bottom: 25px;
+}
+@media (min-width: 550px) {
+  .advancedFeature {
+    text-align: center;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advancedFeature-img {
+    display: inline-block;
+    width: 200px;
+    max-width: unset;
+  }
+}
+@media (min-width: 650px) {
+  .advancedFeature {
+    width: 400px;
+  }
+  .advancedFeature-img {
+    width: 235px;
+  }
+}
+@media (min-width: 1200px) {
+  .advancedFeatures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    margin-bottom: 60px;
+  }
+  .advancedFeature {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+  }
+  .advancedFeature-img {
+    width: 160px;
+  }
+  .advancedFeature-text > h2 {
+    height: 65px;
+  }
+}
+@media (min-width: 1450px) {
+  .advancedFeatures {
+    grid-column-gap: 75px;
+  }
+}

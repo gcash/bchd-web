@@ -1,0 +1,71 @@
+<section class="backbone">
+  <div class="container">
+
+    <div class="backboneIntro">
+      <picture>
+        <source media="(min-width: 1450px)" srcset="{{ svg_dir }}backbone.intro-horizontal.svg?{{ version }}" />
+        <source media="(min-width: 992px)" srcset="{{ svg_dir }}backbone.intro-vertical.svg?{{ version }}" />
+        <source media="(min-width: 550px)" srcset="{{ svg_dir }}backbone.intro-horizontal.svg?{{ version }}" />
+        <source srcset="{{ svg_dir }}backbone.intro-vertical.svg?{{ version }}" />
+        <img src="{{ svg_dir }}backbone.intro-vertical.svg?{{ version }}" class="img-responsive backboneIntro-img" />
+      </picture>
+      <h1 class="backboneIntro-heading">BCHD is the ideal backbone for your next Bitcoin Cash project</h1>
+      <p class="backboneIntro-subhead">If you need to access the Bitcoin Cash blockchain, BCHD gets you there fast</p>
+    </div>
+
+    <div class="backboneCards">
+      <div class="backboneCard">
+        <img src="{{ svg_dir }}backbone.api.svg?{{ version }}" class="img-responsive backboneCard-img">
+        <div class="backboneCard-text">
+          <h2>You no longer need to run an indexing server alongside your node</h2>
+          <p>In the past, developers had to install extra software like Electrum X or BitPay's Insight along with their full node. Not anymore! BCHD is single application that both validates blocks and serves index data.</p>
+          <div class="slide-panel-expand-btn">
+            <span></span>
+            <span></span>
+          </div>
+          <a role="button" class="slide-btn" data-target="api">Learn how much work this saves you</a>
+        </div>
+        <div id="api" class="slide-panel">
+          <h2 class="slide-heading">Get up and running fast!</h2>
+          <p>Developers running most full node implementations, such as Bitcoin Core, Bitcoin ABC, or Bitcoin Unlimited, have to install extra software that connects to their node, computes the required indexes, and serves the data via a public API. These servers often leave much to be desired.</p>
+          <p>They tend to be difficult to install, run, and keep running in a production environment. Further, the APIs exposed by these servers are not that great. Insight uses a REST API for some types of data but then requires the use of WebSockets and socket.io for others. Libbitcoin uses ZMQ which requires developers to import a large C dependency. Electrum servers use a clunky and cumbersome stratum API. And so on.</p>
+          <p>We want developers to start building as fast as possible. Now you simply download the BCHD binary and run it. That’s it!</p>
+        </div>
+      </div>
+      <div class="backboneCard alternate">
+        <img src="{{ svg_dir }}backbone.grpc.svg?{{ version }}" class="img-responsive backboneCard-img">
+        <div class="backboneCard-text">
+          <h2>The gRPC API is an absolute pleasure to work with</h2>
+          <p>gRPC is a new framework created by Google that blows away legacy systems like JSON-RPC, REST and WebSockets. No matter what programming language you prefer, accessing your node's data with gRPC will feel effortless.</p>
+          <div class="slide-panel-expand-btn">
+            <span></span>
+            <span></span>
+          </div>
+          <a role="button" class="slide-btn" data-target="grpc">Learn why gRPC is so great</a>
+        </div>
+        <div id="grpc" class="slide-panel">
+          <h2 class="slide-heading">Welcome to the future of consuming data</h2>
+          <p>Here's a short video made to introduce developers to our API and gRPC in general.</p>
+          <div class="backboneCard-video">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8oKUQPKCyRg" allowfullscreen></iframe>
+            </div>
+          </div>
+          <p>Prefer to read? Here are just a few benefits of gRPC:</p>
+          <ul class="backboneCard-list">
+            <li>No more hunting down API documentation or dealing with poorly documented APIs .</li>
+            <li>No more hand-crafted JSON call objects.  All requests and responses are strongly typed and code-generated, with hints available in the IDE.</li>
+            <li>No more dealing with methods, headers, body, and low-level networking . Everything is handled by gRPC.</li>
+            <li>No more second-guessing the meaning of error codes. gRPC status codes are a canonical way of representing issues in APIs.</li>
+            <li>No more one-off, server-side request handlers to avoid concurrent connections.   gRPC is based on HTTP2, with multiplexes multiple streams over the same connection. So no more head-of-line blocking.</li>
+            <li>No more problems streaming data from a server. gRPC supports both one-to-one RPCs and one-to-many streaming requests. No more awkward REST / WebSocket combo APIs.</li>
+            <li>No more data parse errors when rolling out new binaries. gRPC enables backwards and forwards-compatibility of requests and responses.</li>
+            <li>No need to write any client code as the protoc compiler will autogenerate client libraries - including wire serialization and deserialization code - for just about every major language. The compiler writes thousands of lines of code so you don’t have to.</li>
+          </ul>
+          <p>Ready to give it a spin? We currently have a public BCHD server running at <code>bchd.greyh.at:8335</code>. Feel free to try it out!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

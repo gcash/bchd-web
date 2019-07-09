@@ -1,0 +1,156 @@
+/* Download Button
+--------------------------------------------*/
+.download {
+  text-align: center;
+}
+.downloadBtn-link {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  text-decoration: none;
+  width: 100%;
+  max-width: 285px;
+  border: 4px solid #214075;
+  border-radius: 0;
+  padding: 15px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.downloadBtn-link:hover {
+  background-color: #f0f2f4;
+  border-color: #214075;
+}
+.downloadBtn-link:active,
+.downloadBtn-link:hover,
+.downloadBtn-link:focus {
+  text-decoration: none;
+}
+.downloadBtn-link.open {
+  background-color: #f0f2f4;
+  border-color: #214075;
+}
+.downloadBtn-icon {
+  width: 40px;
+  align-self: flex-start;
+  margin-right: 15px;
+}
+.downloadBtn-text {
+  text-align: left;
+}
+.downloadBtn-now {
+  color: #214075;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 7px;
+  margin-bottom: -2px;
+}
+.downloadBtn-os {
+  color: #969ea3;
+  font-size: 0.8rem;
+}
+.downloadBtn-link:hover .downloadBtn-now,
+.downloadBtn-link:hover .downloadBtn-os {
+  color: #273849;
+}
+@media (max-width: 767px) {
+  .download {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .downloadBtn-link {
+    max-width: unset;
+    width: 350px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .download {
+    margin-bottom: 120px;
+  }
+}
+@media (min-width: 1450px) {
+  .download {
+    margin-bottom: 150px;
+  }
+}
+
+
+/* Download Panel
+--------------------------------------------*/
+.downloadPanel-slide {
+  background-image:
+    linear-gradient(
+      #e2e6e9,
+      #f0f2f4 5%,
+      #f0f2f4 95%,
+      #e2e6e9 100%
+    );
+  border-top: 1px solid #cbd2d8;
+  border-bottom: 1px solid #cbd2d8;
+}
+.downloadPanel-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 25px;
+}
+.downloadPanel-option {
+  background-color: #fafafa;
+  border: 2px solid #e2e2e2;
+  border-radius: 20px;
+  padding: 20px;
+}
+.downloadPanel-osIcon {
+  width: 50px;
+}
+.downloadPanel-osName {
+  color: #444;
+  font-weight: 600;
+}
+.downloadPanel-isaList {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+p.downloadPanel-githubLink {
+  margin-bottom: 20px;
+}
+@media (min-width: 450px) {
+  .downloadPanel-options {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 600px) {
+  .downloadPanel-options {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .downloadPanel-options {
+    max-width: 950px;
+    grid-gap: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  p.downloadPanel-githubLink {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1200px) {
+  .downloadPanel-options {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    max-width: 1100px;
+  }
+  .downloadPanel-option {
+    padding: 40px;
+  }
+  .downloadPanel-osIcon {
+    width: 65px;
+  }
+}

@@ -1,0 +1,110 @@
+# Set the filesystem directory variables
+fs_base:          /usr/share/nginx/html/
+
+# Set the webserver directory variables
+base_dir:          /
+css_dir:           /_assets/css/
+js_dir:            /_assets/js/
+img_dir:           /_assets/img/
+svg_dir:           /_assets/svg/
+
+# Set the base url for opengraph and meta tags
+base_url:         https://bchd.cash
+
+# Info related to latest release downloads
+release:
+  version: v0.14.6
+  os:
+    linux:
+      name: Linux
+      slug: linux
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-linux_amd64.zip
+        arm:
+          name: ARM
+          filename: bchd-linux_arm.zip
+        386:
+          name: 386
+          filename: bchd-linux_386.zip
+    windows:
+      name: Windows
+      slug: windows
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-windows_amd64.zip
+        386:
+          name: 386
+          filename: bchd-windows_386.zip
+    darwin:
+      name: Darwin
+      slug: darwin
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-darwin_amd64.zip
+        386:
+          name: 386
+          filename: bchd-darwin_386.zip
+    solaris:
+      name: Solaris
+      slug: solaris
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-solaris_amd64.zip
+    plan9:
+      name: Plan 9
+      slug: plan9
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-plan9_amd64.zip
+        386:
+          name: 386
+          filename: bchd-plan9_386.zip
+    freebsd:
+      name: FreeBSD
+      slug: freebsd
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-freebsd_amd64.zip
+        arm:
+          name: ARM
+          filename: bchd-freebsd_arm.zip
+        386:
+          name: 386
+          filename: bchd-freebsd_386.zip
+    openbsd:
+      name: OpenBSD
+      slug: openbsd
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-openbsd_amd64.zip
+        386:
+          name: 386
+          filename: bchd-openbsd_386.zip
+    netbsd:
+      name: NetBSD
+      slug: netbsd
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-netbsd_amd64.zip
+        arm:
+          name: ARM
+          filename: bchd-netbsd_arm.zip
+        386:
+          name: 386
+          filename: bchd-netbsd_386.zip
+    dragonfly:
+      name: Dragonfly
+      slug: dragonfly
+      isa:
+        amd64:
+          name: 64 bit
+          filename: bchd-dragonfly_amd64.zip

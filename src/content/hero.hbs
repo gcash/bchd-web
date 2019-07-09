@@ -1,0 +1,13 @@
+<section class="hero">
+  <picture>
+    <source media="(min-width: 1450px)" srcset="{{ img_dir }}hero-xxlarge.jpg?{{ version }}" />
+    <source media="(min-width: 1200px)" srcset="{{ img_dir }}hero-xlarge.jpg?{{ version }}" />
+    <source media="(min-width: 768px)" srcset="{{ img_dir }}hero-large.jpg?{{ version }}" />
+    <source media="(min-width: 500px)" srcset="{{ img_dir }}hero-medium.jpg?{{ version }}" />
+    <source media="(min-width: 400px)" srcset="{{ img_dir }}hero-small.jpg?{{ version }}" />
+    <source srcset="{{ img_dir }}hero-smallest.jpg?{{ version }}" />
+    <img src="{{ img_dir }}hero-small.jpg?{{ version }}" class="img-responsive hero-img" />
+  </picture>
+  <img src="{{ svg_dir }}logo.svg?{{ version }}" alt="BCHD" class="hero-logo">
+  <h1 class="hero-heading">Develop applications that empower the entire world</h1>
+</section>
