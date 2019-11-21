@@ -55,9 +55,9 @@
           <ul class="backboneCard-list">
             <li>No more hunting down API documentation or dealing with poorly documented APIs .</li>
             <li>No more hand-crafted JSON call objects.  All requests and responses are strongly typed and code-generated, with hints available in the IDE.</li>
-            <li>No more dealing with methods, headers, body, and low-level networking . Everything is handled by gRPC.</li>
+            <li>No more dealing with methods, headers, body, and low-level networking. Everything is handled by gRPC.</li>
             <li>No more second-guessing the meaning of error codes. gRPC status codes are a canonical way of representing issues in APIs.</li>
-            <li>No more one-off, server-side request handlers to avoid concurrent connections.   gRPC is based on HTTP2, with multiplexes multiple streams over the same connection. So no more head-of-line blocking.</li>
+            <li>No more one-off, server-side request handlers to avoid concurrent connections. gRPC is based on HTTP2, which multiplexes multiple streams over the same connection. So no more head-of-line blocking.</li>
             <li>No more problems streaming data from a server. gRPC supports both one-to-one RPCs and one-to-many streaming requests. No more awkward REST / WebSocket combo APIs.</li>
             <li>No more data parse errors when rolling out new binaries. gRPC enables backwards and forwards-compatibility of requests and responses.</li>
             <li>No need to write any client code as the protoc compiler will autogenerate client libraries - including wire serialization and deserialization code - for just about every major language. The compiler writes thousands of lines of code so you don’t have to.</li>
