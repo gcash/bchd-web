@@ -45,9 +45,6 @@ release:
         amd64:
           name: 64 bit
           filename: bchd-darwin_amd64.zip
-        386:
-          name: 386
-          filename: bchd-darwin_386.zip
     solaris:
       name: Solaris
       slug: solaris
