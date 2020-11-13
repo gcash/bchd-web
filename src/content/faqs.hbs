@@ -10,33 +10,41 @@
     <div class="faqsBlock one">
       <h2 class="faqsBlock-heading">General</h2>
       <div class="faqs-q">
-        <p><span class="leading">Q</span>Why would I run BCHD rather than Bitcoin ABC or Bitcoin Unlimited?</p>
+        <p><span class="leading">Q</span>Why would I run BCHD rather than Bitcoin Cash Node or Bitcoin Unlimited?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>We'd like to see ABC / BU continue on as primary mining nodes, while BCHD services the app developers that need better APIs.</p>
+        <p><span class="leading">A</span>We'd like to see BCHN / BU continue on as primary mining nodes, while BCHD
+          services the app developers that need better APIs.</p>
       </div>
       <div class="faqs-q">
         <p><span class="leading">Q</span>Can I mine with BCHD?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>You can, but you might not want to just yet. So far it hasn't been stable enough to mine with, and this instability could have been disruptive to the network. As our stability increases, we may consider promoting BCHD more for mining.</p>
+        <p><span class="leading">A</span>BCHD is mainly designed for app developers, however we have mined blocks on
+          testnet, and would love to work with miners to mine blocks on mainnet.</p>
       </div>
       <div class="faqs-q">
         <p><span class="leading">Q</span>Are alternative Bitcoin implementations good for the network?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>This question has been disputed in the Bitcoin space for years. We tend to agree with Bitcoin ABC lead developer Amaury Séchet when he says that multiple implementations help keep "everyone honest."</p>
+        <p><span class="leading">A</span>This question has been disputed in the Bitcoin space for years. We tend to
+          agree with Bitcoin ABC lead developer Amaury Séchet when he says that multiple implementations help keep
+          "everyone honest."</p>
       </div>
       <div class="faqs-q">
         <p><span class="leading">Q</span>What are some benefits to coding BCHD in Go?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>Dave Collins, the original developer of BTCD, <a href="https://bitcoin.stackexchange.com/a/13622" target="_blank">listed some advantages <img src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink"></a> that Go has over C++ that make it excellent for Bitcoin.</p>
+        <p><span class="leading">A</span>Dave Collins, the original developer of BTCD, <a
+            href="https://bitcoin.stackexchange.com/a/13622" target="_blank">listed some advantages <img
+              src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink"></a> that Go has over C++ that make it
+          excellent for Bitcoin.</p>
         <ul>
           <li>Integrated test infrastructure</li>
           <li>Platform independent code</li>
           <li>Simpler parallelism and excellent support for concurrency</li>
-          <li>No active memory management which leads to eliminating an entire class of the most common security vulnerabilities like buffer overflows</li>
+          <li>No active memory management which leads to eliminating an entire class of the most common security
+            vulnerabilities like buffer overflows</li>
           <li>Built-in profiling and documentation facilities</li>
           <li>Significantly faster compilation times</li>
         </ul>
@@ -48,14 +56,18 @@
         <p><span class="leading">Q</span>What is the roadmap for BCHD?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>Short answer: to remain in consensus while developing the most feature-rich node implementation Bitcoin Cash has to offer.</p>
-        <p>You can read our full current roadmap <a href="https://medium.com/@bchd.cash/bchd-2019-roadmap-a6f7371fe76f" target="_blank">here <img src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink"></a></p>
+        <p><span class="leading">A</span>Short answer: to remain in consensus while developing the most feature-rich
+          node implementation Bitcoin Cash has to offer.</p>
+        <p>You can read our full current roadmap <a href="https://medium.com/@bchd.cash/bchd-2019-roadmap-a6f7371fe76f"
+            target="_blank">here <img src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink"></a></p>
       </div>
       <div class="faqs-q">
         <p><span class="leading">Q</span>How is FastSync possible?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>FastSync mode operates like a quasi-pruned node in that it does not have a full copy of the blockchain going back to genesis. But unlike pruned mode it will not delete old historical blocks as it goes.</p>
+        <p><span class="leading">A</span>FastSync mode operates like a quasi-pruned node in that it does not have a full
+          copy of the blockchain going back to genesis. But unlike pruned mode it will not delete old historical blocks
+          as it goes.</p>
         <p>The way it works is this:</p>
         <ol>
           <li>Download a snapshotted copy of the UTXO set at block height 556767 from IPFS.</li>
@@ -73,8 +85,11 @@
         <p><span class="leading">Q</span>What can I make with bchwallet?</p>
       </div>
       <div class="faqs-a">
-        <p><span class="leading">A</span>Why not build a next-gen SPV mobile wallet? You can easily compile bchwallet to run on iOS or Android, and then just control it with the gRPC API.</p>
-        <p>Want some inspiration? We built our own Neutrino wallet on bchwallet. Check out <a href="https://github.com/gcash/android-neutrino" target="_blank">the source code <img src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink"></a> on GitHub.</p>
+        <p><span class="leading">A</span>Why not build a next-gen SPV mobile wallet? You can easily compile bchwallet to
+          run on iOS or Android, and then just control it with the gRPC API.</p>
+        <p>Want some inspiration? We built our own Neutrino wallet on bchwallet. Check out <a
+            href="https://github.com/gcash/android-neutrino" target="_blank">the source code <img
+              src="{{ svg_dir }}extlink.svg?{{ version }}" class="extLink"></a> on GitHub.</p>
       </div>
     </div>
 
