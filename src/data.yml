@@ -13,7 +13,7 @@ base_url:         https://bchd.cash
 
 # Info related to latest release downloads
 release:
-  version: v0.17.1
+  version: v0.17.2
   os:
     linux:
       name: Linux
@@ -45,6 +45,9 @@ release:
         amd64:
           name: 64 bit
           filename: bchd-darwin_amd64.zip
+        arm64:
+          name: ARM
+          filename: bchd-darwin_arm64.zip
     solaris:
       name: Solaris
       slug: solaris
