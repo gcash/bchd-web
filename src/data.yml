@@ -45,9 +45,6 @@ release:
         amd64:
           name: 64 bit
           filename: bchd-darwin_amd64.zip
-        arm64:
-          name: ARM
-          filename: bchd-darwin_arm64.zip
     solaris:
       name: Solaris
       slug: solaris
