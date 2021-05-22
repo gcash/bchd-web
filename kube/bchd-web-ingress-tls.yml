@@ -1,4 +1,4 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: bchd-web-ingress
@@ -12,21 +12,29 @@ spec:
     - www.bchd.cash
     - bchd.cash
     secretName: bchd-web-tls
-  backend:
-    serviceName: bchd-web
-    servicePort: 95
+  defaultBackend:
+    service:
+      name: bchd-web
+      port:
+        number: 95
   rules:
   - host: bchd.cash
     http:
       paths:
       - path: /
+        pathType: ImplementationSpecific
         backend:
-          serviceName: bchd-web
-          servicePort: 95
+          service:
+            name: bchd-web
+            port:
+              number: 95
   - host: www.bchd.cash
     http:
       paths:
       - path: /
+        pathType: ImplementationSpecific
         backend:
-          serviceName: bchd-web
-          servicePort: 95
+          service:
+            name: bchd-web
+            port:
+              number: 95
