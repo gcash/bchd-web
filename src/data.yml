@@ -13,7 +13,7 @@ base_url:         https://bchd.cash
 
 # Info related to latest release downloads
 release:
-  version: v0.18.0
+  version: v0.18.1
   os:
     linux:
       name: Linux
