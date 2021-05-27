@@ -52,11 +52,11 @@ p.slp-subhead {
   }
   .slp .container {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: auto 300px;
     grid-column-gap: 50px;
     grid-row-gap: 25px;
     grid-template-areas:
-      'image text'
+      'text image'
       'panel panel';
   }
   .slp-img-wrapper {
@@ -76,7 +76,7 @@ p.slp-subhead {
 }
 @media (min-width: 1200px) {
   .slp .container {
-    grid-template-columns: 500px auto;
+    grid-template-columns: auto 500px;
     grid-column-gap: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -88,7 +88,7 @@ p.slp-subhead {
 }
 @media (min-width: 1450px) {
   .slp .container {
-    grid-template-columns: 630px auto;
+    grid-template-columns: auto 630px;
   }
   #slp {
     padding-left: 200px;
