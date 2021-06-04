@@ -1,6 +1,6 @@
 {
   "name": "bchd-web",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "",
   "description": "Frontend marketing website for BCHD",
   "main": "Gruntfile.js",
