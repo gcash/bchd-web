@@ -16,7 +16,7 @@ spec:
         service: bchd-web
     spec:
       containers:
-      - image: zquestz/bchd-web:12-08-2020
+      - image: zquestz/bchd-web:05-05-2022
         imagePullPolicy: Always
         name: bchd-web
         ports:
