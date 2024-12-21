@@ -1,19 +1,19 @@
 # Set the filesystem directory variables
-fs_base:          /usr/share/nginx/html/
+fs_base: /usr/share/nginx/html/
 
 # Set the webserver directory variables
-base_dir:          /
-css_dir:           /_assets/css/
-js_dir:            /_assets/js/
-img_dir:           /_assets/img/
-svg_dir:           /_assets/svg/
+base_dir: /
+css_dir: /_assets/css/
+js_dir: /_assets/js/
+img_dir: /_assets/img/
+svg_dir: /_assets/svg/
 
 # Set the base url for opengraph and meta tags
-base_url:         https://bchd.cash
+base_url: https://bchd.cash
 
 # Info related to latest release downloads
 release:
-  version: v0.20.0-rc1
+  version: v0.20.0-rc2
   os:
     linux:
       name: Linux
