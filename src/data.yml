@@ -52,16 +52,6 @@ release:
         amd64:
           name: 64 bit
           filename: bchd-solaris_amd64.zip
-    plan9:
-      name: Plan 9
-      slug: plan9
-      isa:
-        amd64:
-          name: 64 bit
-          filename: bchd-plan9_amd64.zip
-        386:
-          name: 386
-          filename: bchd-plan9_386.zip
     freebsd:
       name: FreeBSD
       slug: freebsd
