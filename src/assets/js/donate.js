@@ -1,11 +1,11 @@
-/*global document, $, Clipboard */
+/*global document, $, ClipboardJS */
 $(document).ready(function() {
   
   var debug = false;
 
   /* For copying BCH addess to clipboard */
   function initializeClipboard(selector) {
-    var clipboard = new Clipboard(selector);
+    var clipboard = new ClipboardJS(selector);
     var successClass = selector.replace(/^\./, "") + '-success';
     clipboard.on('success', function(e) {
       $(selector).addClass(successClass);
